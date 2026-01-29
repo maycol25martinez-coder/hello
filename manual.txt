@@ -1,1 +1,17 @@
 # Manual de Git para Expertos 
+
+
+:: 1. Crear el archivo físicamente (esto evita el error de pathspec)
+echo # Manual de Git para Expertos > manual.txt
+
+:: 2. Verificar que el archivo existe en la carpeta
+dir manual.txt
+
+:: 3. Preparar el archivo para Git
+git add manual.txt
+
+:: 4. Guardar el cambio con el mensaje correcto (usando comillas dobles)
+git commit -m "Creacion oficial del manual de Git"
+
+:: 5. Ver que todo se guardo correctamente
+git log --oneline
